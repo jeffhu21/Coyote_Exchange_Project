@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">cx</string>
+    <string name="canada">Canada</string>
+    <string name="japan">Japan</string>
+    <string name="uk">UK</string>
+    <string name="usa">USA</string>
+    <string name="france">France</string>
+    <string name="germany">Germany</string>
+    <string name="italy">Italy</string>
+    <string name="cx_logo">CX Logo</string>
+    <string name="loader">Loader</string>
+    <string name="result">TextView</string>
+</resources>

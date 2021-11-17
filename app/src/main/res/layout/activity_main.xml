@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    <ImageButton
+        android:id="@+id/Canada"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="70dp"
+        android:contentDescription="@string/canada"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/canada" />
+    
+    <ImageButton
+        android:id="@+id/Japan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/japan"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/Canada"
+        app:layout_constraintStart_toEndOf="@+id/Canada"
+        app:layout_constraintTop_toTopOf="@+id/Canada"
+        app:srcCompat="@drawable/japan" />
+    
+    
+    <ImageButton
+        android:id="@+id/UK"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/uk"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/Japan"
+        app:layout_constraintStart_toEndOf="@+id/Japan"
+        app:layout_constraintTop_toTopOf="@+id/Japan"
+        app:srcCompat="@drawable/uk" />
+    
+    
+    <ImageButton
+        android:id="@+id/USA"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/usa"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/UK"
+        app:layout_constraintStart_toEndOf="@+id/UK"
+        app:layout_constraintTop_toTopOf="@+id/UK"
+        app:srcCompat="@drawable/usa" />
+    
+    <ImageButton
+        android:id="@+id/France"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/france"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/USA"
+        app:layout_constraintStart_toEndOf="@+id/USA"
+        app:layout_constraintTop_toTopOf="@+id/USA"
+        app:srcCompat="@drawable/france" />
+    
+    <ImageButton
+        android:id="@+id/Germany"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/germany"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/France"
+        app:layout_constraintStart_toEndOf="@+id/France"
+        app:layout_constraintTop_toTopOf="@+id/France"
+        app:srcCompat="@drawable/germany" />
+    
+    <ImageButton
+        android:id="@+id/Italy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/italy"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/Germany"
+        app:layout_constraintStart_toEndOf="@+id/Germany"
+        app:layout_constraintTop_toTopOf="@+id/Germany"
+        app:srcCompat="@drawable/italy" />
+    
+    
+    <ImageView
+        android:id="@+id/cx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:contentDescription="@string/cx_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cx_logo" />
+    
+    <!--
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progress="10"/>
+        -->
+        
+    <!--
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/circular_shape"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:textAlignment="center" />
+    
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/teal_700"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+    -->
+    
+    
+    <!--
+    <ImageView
+        android:id="@+id/loader"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/loader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cx"
+        app:srcCompat="@drawable/loader"
+        tools:ignore="ImageContrastCheck" />
+    -->
+    
+    <TextView
+        android:id="@+id/theResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:contentDescription="@string/result"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cx" />
+</android.support.constraint.ConstraintLayout>
